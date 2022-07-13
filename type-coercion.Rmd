@@ -11,13 +11,13 @@ c(1, 1L, "C")
 ```
 
 ```{r}
-1
-1L
-"C"
+typeof(1)
+typeof(1L)
+typeof("C")
 ```
 
-```{r}
-#typeof(c(1, 1L, "C"))
+```{r character1}
+typeof(c(1, 1L, "C"))
 ```
 
 -   `c(1L / 0, "A")`
@@ -33,8 +33,8 @@ typeof(1L/0)
 typeof("A")
 ```
 
-```{r}
-#typeof(c(1L / 0, "A"))
+```{r character2}
+typeof(c(1L / 0, "A"))
 ```
 
 -   `c(1:3, 5)`
@@ -48,8 +48,8 @@ typeof(1:3)
 typeof(5)
 ```
 
-```{r}
-#typeof(c(1:3, 5))
+```{r double}
+typeof(c(1:3, 5))
 ```
 
 -   `c(3, "3+")`
@@ -63,8 +63,8 @@ typeof(3)
 typeof("3+")
 ```
 
-```{r}
-#typeof(c(3, "3+"))
+```{r character3}
+typeof(c(3, "3+"))
 ```
 
 -   `c(NA, TRUE)`
@@ -78,6 +78,6 @@ typeof(NA)
 typeof(TRUE)
 ```
 
-```{r}
-#typeof(c(NA, TRUE))
+```{r logical}
+typeof(c(NA, TRUE))
 ```
